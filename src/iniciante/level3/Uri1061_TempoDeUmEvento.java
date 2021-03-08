@@ -63,7 +63,7 @@ public class Uri1061_TempoDeUmEvento {
 		} else if (horaFim == horaInicio && (segundoFim < segundoInicio || minutoFim < minutoInicio)){
 			return 24 - 1;
 		} else if (horaFim < horaInicio && (minutoFim >= minutoInicio)) {
-			return 24 - (horaInicio - horaFim); //segundo menor e minuto maior
+			return 24 - (horaInicio - horaFim);
 		} else if (horaFim < horaInicio && (minutoFim < minutoInicio)) {
 			return 24 - (horaInicio - horaFim) - 1;
 		}
@@ -77,7 +77,7 @@ public class Uri1061_TempoDeUmEvento {
 			return diaFim - diaInicio;
 		} else if(horaFim == horaInicio && (minutoFim == minutoInicio && segundoFim == segundoInicio)) {
 			return diaFim - diaInicio;
-		} else if (horaFim == horaInicio && (minutoFim >= minutoInicio && segundoFim >= (segundoInicio - 1))) { //mudei
+		} else if (horaFim == horaInicio && (minutoFim >= minutoInicio && segundoFim >= (segundoInicio - 1))) {
 			return diaFim - diaInicio;
 		} 
 		return (diaFim - diaInicio) - 1;
