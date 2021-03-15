@@ -4,8 +4,7 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Uri1021_NotasMoedas {
-
-	//erro no 11 no campo real
+	
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
