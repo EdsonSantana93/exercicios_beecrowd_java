@@ -18,13 +18,11 @@ public class Uri1098_SequenciaIJ4 {
 			for (BigDecimal j = new BigDecimal(1); j.compareTo(new BigDecimal(3)) != 1; j = j.add(new BigDecimal(1))) {
 				
 				BigDecimal total = j.add(new BigDecimal(novoI.doubleValue()));
-				resto = total.setScale(1, RoundingMode.FLOOR).subtract(new BigDecimal(total.intValue()));
+				resto = total.setScale(1, RoundingMode.FLOOR).subtract(new BigDecimal(total.intValue()).setScale(1, RoundingMode.FLOOR));
 				
-				var novoJ = resto.doubleValue() == 0 ? total.intValue() : total.setScale(1, RoundingMode.FLOOR);
+				var novoJ = resto.doubleValue() == 0 ? total.intValue() : total.setScale(1, RoundingMode.HALF_EVEN);
 				
 				System.out.println("I=" + novoI + " J=" + novoJ);
-				
-				/// System.out.printf("I=%s J=%.1f\n", novoI, i + j);
 			}
 		}
 
