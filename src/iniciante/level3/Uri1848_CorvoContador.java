@@ -10,14 +10,13 @@ public class Uri1848_CorvoContador {
 		Integer numero = 0;
 		String acaoCorvo;
 
-		while (true) {
+		while (teclado.hasNext()) {
 			acaoCorvo = teclado.nextLine();
 			if (!acaoCorvo.equals("caw caw")) {
 				numero += calcularPiscada(acaoCorvo);
 			} else {
 				System.out.println(numero);
 				numero = 0;
-				break;
 			}
 		}
 
