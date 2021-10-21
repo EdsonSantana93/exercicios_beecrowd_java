@@ -15,10 +15,10 @@ public class Uri2221_BatalhaDePokemons {
 			String[] pokemonDatiel = teclado.nextLine().split(" ");
 			String[] pokemonGuarte = teclado.nextLine().split(" ");
 			
-			int valorGolpeDatiel = calcularValorGolpe(bonus, pokemonDatiel);
+			int valorGolpeDabriel = calcularValorGolpe(bonus, pokemonDatiel);
 			int valorGolpeGuarte = calcularValorGolpe(bonus, pokemonGuarte);
 			
-			System.out.println(verificarGanhador(valorGolpeDatiel, valorGolpeGuarte));
+			System.out.println(verificarGanhador(valorGolpeDabriel, valorGolpeGuarte));
 		}
 		
 		teclado.close();
@@ -27,7 +27,7 @@ public class Uri2221_BatalhaDePokemons {
 
 	private static String verificarGanhador(int valorGolpeDatiel, int valorGolpeGuarte) {
 		if (valorGolpeDatiel > valorGolpeGuarte) 
-			return "Datiel";
+			return "Dabriel";
 		if (valorGolpeDatiel < valorGolpeGuarte) 
 			return "Guarte";
 		return "Empate";
